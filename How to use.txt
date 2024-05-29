@@ -1,48 +1,51 @@
-How to use
+# Hello Astro Programming Language
 
+## Overview
+Hello Astro is a simple, beginner-friendly programming language inspired by the Tunisian algorithm methods. It is designed to help users learn programming concepts using familiar syntax and constructs.
 
-Hello Astro: 
-
+## Basic Commands
+```plaintext
 ECRIRE "Hello Astro"
 ECRIRE "Hello" + "Astro"
 
-Variables : 
+Variables
 
-var a = "hi im Astro"
+VAR a = "hi im Astro"
 ECRIRE (a)
 
+Data Types
 
-Types : 
--ENTIER :
+ENTIER (Integer)
 
 VAR a = 1
 VAR b = 3
-ECRIRE (a+b)
+ECRIRE (a + b)
 
--REEL : 
+REEL (Real/Float)
 
 VAR a = 2.5
 ECRIRE (a)
 
--CHAINE :
+CHAINE (String)
 
 VAR a = "hi im Astro and im 19 years old"
 ECRIRE (a)
 
--BOOL : 
+BOOL (Boolean)
 
 VAR a = VRAI
 ECRIRE (a)
 
-Operators :
 
--Arithmetic:
-VAR a=2
-VAR b=3
-VAR c=(((a+b)*2^3)/4)-10
+Operators
 
+Arithmetic
 
--Comparison : 
+VAR a = 2
+VAR b = 3
+VAR c = (((a + b) * 2^3) / 4) - 10
+
+Comparison
 
 10 < 9
 10 <= 9
@@ -53,90 +56,75 @@ VAR c=(((a+b)*2^3)/4)-10
 
 a < b 
 a != b 
-a = a
+a == a
 a != A 
 
 VRAI == VRAI 
 VRAI != FAUX 
 
-
 Conditionals
--Normal:
 
-SI 5==4 FAIRE (123) SINON_SI 5==5 FAIRE ECRIRE (321) SINON 456
-ou : 
+Single-line
 
-SI 5==4 FAIRE
+SI 5 == 4 FAIRE (123) SINON_SI 5 == 5 FAIRE ECRIRE (321) SINON (456)
+
+Multi-line
+
+SI 5 == 4 FAIRE
     ECRIRE (123)
-SINON_SI 5==5 FAIRE
+SINON_SI 5 == 5 FAIRE
     ECRIRE (321)
-SINON 456
+SINON
+    ECRIRE (456)
 
 
-Loops :
+Loops
 
-si loop 
+FOR Loop
 
-POUR i = 1 A 6 FAIRE VAR i = i *2 ; ECRIRE (i)
+POUR i = 1 A 6 FAIRE
+    VAR i = i * 2
+    ECRIRE (i)
 
 VAR r = 1
-POUR i = 5 A 0 PAS -1 FAIRE VAR r = r * i
+POUR i = 5 A 0 PAS -1 FAIRE
+    VAR r = r * i
 ECRIRE (r)
 
-
-tant_que loop
+WHILE Loop
 
 VAR i = 0
-TANT_QUE i <1000 FAIRE  VAR i = i + 1 
+TANT_QUE i < 1000 FAIRE
+    VAR i = i + 1
 
+Functions
+FN moyenne (a, b) -> ((a + (2 * b)) / 3)
+ECRIRE (moyenne (10.25, 15.50))
 
-Fonctions : 
+Built-in Functions
 
+PI
 
-
-FN moyenne (a,b) -> ((a+(2*b))/3)
-ECRIRE (moyenne (10.25,15.50))
-
-
-built-in function :
-
-
-
-
-PI :
 VAR radius = 15
-ECRIRE (VAR c = radius * 2 * PI)
+VAR c = radius * 2 * PI
+ECRIRE (c)
 
-ECRIRE & LIRE :
+ECRIRE & LIRE
 
 VAR name = LIRE()
 ECRIRE (name)
 
-clear :
-VAR a = 2
-ECRIRE (a)
+Other Built-in Functions
+
 CLEAR()
 
-IS_NUM : 
-
 IS_NUM(2)
-
-IS_STR : 
-
 IS_STR("b")
-
-IS_LIST :
-
 IS_LIST([])
-
-IS_FUN :
-
 IS_FUN(PRINT)
 
-list :
+List Operations
 
-[] 
-[1,2]+3
-[1,2,3]*[4,5,6]
-
-
+[]
+[1, 2] + 3
+[1, 2, 3] * [4, 5, 6]
